@@ -120,22 +120,15 @@ section{
     font-size: 10em !important;
 }
 
-#cherry {
+#hoja1 {
     left: 2em !important ;
     height: 50vh !important ;
     bottom: 0;
 }
 
-#tomato{
+#hoja2{
     right: 2em !important;
     top: 10em !important;
-}
-
-#lettuce{
-    top: -20% !important;
-    left: -10% !important;;
-    transform: rotate(45deg) !important;
-    
 }
 
 #inicio img {
