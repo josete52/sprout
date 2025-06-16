@@ -178,13 +178,18 @@ h2{
     overflow: hidden;
 }
 
-#carousel-3{
+#carousel-planta-mes{
     height: 100%;
 }
 
-#carousel-3 .carousel-cell {
+#carousel-planta-mes .carousel-cell {
     width: 90%;
     
+}
+
+#carousel-planta-mes .card-img-top {
+    height: 600px !important;
+    object-fit: cover;
 }
 
 #brands img {
@@ -421,4 +426,59 @@ a.card {
 .highlight-icon {
     font-size: 2.5rem;
     color: #81c784;
+}
+
+#carousel-planta-mes .carousel-cell {
+    position: relative;
+    overflow: visible;
+}
+
+.plant-month-badge {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background: linear-gradient(90deg, #81c784, #388e3c);
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5em 1.2em;
+    border-radius: 20px 8px 20px 8px;
+    font-size: 1.2rem;
+    z-index: 2;
+    box-shadow: 0 2px 12px 0 rgba(44,79,57,0.15);
+    letter-spacing: 1px;
+    animation: badgePop 1s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes badgePop {
+    0% { transform: scale(0.5); opacity: 0; }
+    80% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+
+.plant-info-card {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,0.92);
+    color: #388e3c;
+    padding: 0.7em 1.5em;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 12px 0 rgba(44,79,57,0.10);
+    z-index: 2;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    animation: infoFadeIn 1.2s 0.3s both;
+}
+
+@keyframes infoFadeIn {
+    0% { opacity: 0; transform: translateX(-50%) translateY(30px);}
+    100% { opacity: 1; transform: translateX(-50%) translateY(0);}
+}
+
+.planta-del-mes-card{
+    overflow: hidden;
+    border-radius: var(--bs-card-inner-border-radius);
 }
