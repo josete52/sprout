@@ -172,10 +172,11 @@ h2{
 .carousel-cell {
     width: 25%;
     height: auto;
-    margin-right: 2em;
-    border-radius: 20px !important;
+    margin-right: 1rem !important;
+    border-radius: 20px;
     counter-increment: carousel-cell;
-    margin-right: 2em !important;
+    position: relative;
+    overflow: hidden;
 }
 
 #carousel-2 {
@@ -232,8 +233,39 @@ footer{
     bottom: 0;
 }
 
+.carousel-cell img {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  height: 300px;
+  object-fit: cover;
+}
 
+.carousel-cell img:hover {
+  transform: scale(1.07);
+  z-index: 2;
+}
 
+.carousel-desc {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(44, 79, 57, 0.85);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.carousel-cell:hover .carousel-desc {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 
 /* ADAPTACIONES RESPONSIVE */
 @media screen and (max-width: 1200px) {
@@ -366,4 +398,8 @@ footer{
         display: none !important;
     }
 
+}
+
+a.card {
+    text-decoration: none;
 }
