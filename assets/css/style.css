@@ -408,3 +408,23 @@ footer{
 a.card {
     text-decoration: none;
 }
+
+.badge-product {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #28a745;
+    color: #fff;
+    padding: 0.4em 1em;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    letter-spacing: 0.5px;
+    user-select: none;
+}
+.badge-top-seller { background: #ff9800; }
+.badge-low-stock { background: #e53935; }
+.badge-best-value { background: #1976d2; }
+.carousel-cell.position-relative { position: relative; }
