@@ -482,3 +482,8 @@ a.card {
     overflow: hidden;
     border-radius: var(--bs-card-inner-border-radius);
 }
+
+/* Modal pagina articulo */
+.modal-dialog-centered{
+    margin: 0 auto !important;
+}
