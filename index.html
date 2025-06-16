@@ -1,11 +1,328 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Sprout</title>
 </head>
-<body>
-    <h1>Sprout web</h1>
+
+<body class="overflow-x-hidden">
+
+    <!-- Menu -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg z-2 w-100 px-3" data-bs-theme="dark">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">Sprout</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <div class="vr mx-2"></div>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#promo">Cuidado</a>
+                        </li>
+                        <div class="vr mx-2"></div>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#popu">Packs</a>
+                        </li>
+                        <div class="vr mx-2"></div>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#cook">Guia</a>
+                        </li>
+                        <div class="vr mx-2"></div>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#pack">Tiendas</a>
+                        </li>
+                        <div class="vr mx-2"></div>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#where">¿Donde estamos?</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Buscar en Sprout"
+                            aria-label="Buscar en Sprout">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- pagina home -->
+    <section id="inicio"
+        class="container-fluid d-flex flex-column align-items-center justify-content-center w-100 position-relative">
+        <img data-aos="zoom-in-up" id="logoMain" class="position-absolute start-45"
+            src="./assets/images/Sin título-2-03.png" alt="logo" id="logo" />
+        <div class="container-fluid d-flex flex-column align-items-center justify-content-center w-10 px-5 texto">
+            <h1 data-aos="zoom-in-up" class="d-flex justify-content-start text-nowrap tittle">Tu guia</h1>
+            <h1 data-aos="zoom-in-up" class="d-flex justify-content-center text-nowrap tittle">sobre plantas</h1>
+            <h1 data-aos="zoom-in-up" class="d-flex justify-content-end text-nowrap tittle">definitiva</h1>
+        </div>
+        <img class="position-absolute youSpinMeRound2 " src="./assets/images/—Pngtree—a green leaf png_6859287.png"
+            alt="tomate" id="tomato" />
+        <img class="position-absolute youSpinMeRound " src="./assets/images/—Pngtree—leaf_5647183.png" alt="cerezas"
+            id="cherry" />
+    </section>
+
+    <!-- carousel de cuidado -->
+    <section id="promo" class="container-fluid d-flex flex-column align-items-center w-100 p-5">
+        <h2 data-aos="zoom-in-up" class="pb-5">Cuidado</h2>
+        <div class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
+            <div class="card carousel-cell">
+                <a href="articulo.html"> <img src="./assets/images/Abono azul universal novatec Compo.png"
+                        class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h3>Abono azul universal</h3>
+                    <p class="card-text">Abono azul universal</p>
+                </div>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"></a> <img src="./assets/images/Humus de lombriz ECO Batlle.png"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3>Humus de lombriz ECO </h3>
+                    <p class="card-text">20l</p>
+                </div>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/Insecticida Spray 750 ml.png" card-img-top"
+                        alt=""></a>
+                <div class="card-body">
+                    <h3>Insecticida Spray</h3>
+                    <p class="card-text">750ml</p>
+                </div>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/Captura de pantalla 2025-06-15 165741.png"
+                        class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h3>Brick de Coco</h3>
+                    <p class="card-text">6 ud.</p>
+                </div>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/akadama para bonsai 2l.png" class="card-img-top"
+                        alt=""></a>
+                <div class="card-body">
+                    <h3>Akadama para Bonsai</h3>
+                    <p class="card-text">2l</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- carousel de populares -->
+    <section id="popu" class="container-fluid d-flex flex-column align-items-center w-auto p-5">
+        <h2 data-aos="zoom-in-up" class="pb-5">Packs</h2>
+        <div class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/zanahoria.png" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h3>$3/Kg</h3>
+                    <p class="card-text">Zanahorias de Granada</p>
+                </div>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/nueces.png" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h3>$3/Kg</h3>
+                    <p class="card-text">Nueces peladas</p>
+                </div>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/naranja.png" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h3>$5/Kg</h3>
+                    <p class="card-text">Naranjas de Valencia</p>
+                </div>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/tomate.png" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h3>$6/Kg</h3>
+                    <p class="card-text">Tomate de corazón de buey</p>
+                </div>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/mermelada_frambuesa.png" class="card-img-top"
+                        alt=""></a>
+                <div class="card-body">
+                    <h3>$8/Kg</h3>
+                    <p class="card-text">Frambuesas de monte</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- carousel cocina con nosotros -->
+    <section id="cook" class="container-fluid d-flex flex-column justify-content-center align-items-center w-100 p-5">
+        <h2 data-aos="zoom-in-up" class="pb-5">Guias</h2>
+        <div id="carousel-2" class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/planta 1.jpg" class="card-img-top z-2" alt=""></a>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/planta 2.jpg" class="card-img-top z-2" alt=""></a>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/planta 3.jpg" class="card-img-top z-2" alt=""></a>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/planta 4.jpg" class="card-img-top z-2" alt=""></a>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/planta 5.jpg" class="card-img-top z-2" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- carousel vuestros packs favoritos -->
+    <section id="pack" class="container-fluid d-flex flex-column justify-content-center align-items-center w-100 p-5">
+        <h2 data-aos="zoom-in-up" class="pb-5">PLANTA DEL MES</h2>
+        <div id="carousel-3" class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/sansevieria planta 1.webp" class="card-img-top"
+                        alt=""></a>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/sansevieria planta 2.webp" class="card-img-top"
+                        alt=""></a>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/sansevieria planta 3.webp" class="card-img-top"
+                        alt=""></a>
+            </div>
+            <div class="card carousel-cell">
+                <a href="articulo.html"><img src="./assets/images/sansevieria planta 4.webp" class="card-img-top"
+                        alt=""></a>
+            </div>
+    </section>
+
+    <!-- Conoce nuestras marcas -->
+    <section data-aos="zoom-in-up" id="brands"
+        class="container-fluid d-flex flex-column justify-content-center align-items-center w-100 p-5">
+        <h2>Tiendas</h2>
+        <div class="row  d-flex align-items-center justify-content-between w-100 mt-5 gap-3">
+            <div class="col d-flex align-items-center justify-content-center">
+                <img src="https://placehold.co/40x40" class="marca">
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+                <img src="https://placehold.co/40x40" class="marca">
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+                <img src="https://placehold.co/40x40" class="marca">
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+                <img src="https://placehold.co/40x40" class="marca">
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+                <img src="https://placehold.co/40x40" class="marca">
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+                <img src="https://placehold.co/40x40" class="marca">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- donde estamos -->
+    <section id="where" class="container-fluid d-flex flex-column justify-content-center align-items-center w-100 p-5">
+        <h2 data-aos="zoom-in-up">¿Dónde estamos?</h2>
+
+        <div class="row d-flex justify-content-center align-items-center w-100 p-5">
+            <div class="col d-flex justify-content-center w-100">
+                <img src="./assets/images/geo-alt.svg" class="d-block" height="40px" width="40px"
+                    alt="Simbolo pin maps">
+                <h4>Calle príncipe de Vergara 24<br>28790, Madrid</h4>
+            </div>
+            <div class="col d-flex flex-column justify-content-center align-items-center w-100">
+                <h4>Metro: L9, L8<br>Bus: 70, 190 y 40</h4>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center w-100">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.244059403667!2d-3.6823108225594785!3d40.425594371438244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228bce3633ab3%3A0xe1ad73fa3ec25907!2sC.%20del%20Pr%C3%ADncipe%20de%20Vergara%2C%2024%2C%20Salamanca%2C%2028001%20Madrid!5e0!3m2!1ses!2ses!4v1730055819705!5m2!1ses!2ses"
+                width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center w-100 px-5 mt-5">
+            <div class="col w-100 d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <h4 data-aos="fade-up" data-aos-duration="3000">Pide hoy, recibe hoy</h4>
+                    <p data-aos="fade-up" data-aos-duration="3000">Entrega rápida en la franja horaria que mejor te
+                        venga</p>
+                </div>
+            </div>
+            <div class="col w-100 d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <h4 data-aos="fade-up" data-aos-duration="3000">Envío gratis</h4>
+                    <p data-aos="fade-up" data-aos-duration="3000">En compras superiores a 30€</p>
+                </div>
+            </div>
+            <div class="col w-100 d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <h4 data-aos="fade-up" data-aos-duration="3000">Folletos</h4>
+                    <p data-aos="fade-up" data-aos-duration="3000">Descubre las mejores ofertas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class=" w-100 d-flex p-5 bg-white">
+        <div class="w-100 d-flex flex-column gap-3 ">
+            <a href="#">Recetas</a>
+            <a href="#">Empleo</a>
+            <a href="#">Atencion al cliente</a>
+        </div>
+        <div class=" w-100 d-flex justify-content-end align-items-center gap-4">
+            <i class="bi bi-twitter-x fs-4"></i>
+            <i class="bi bi-facebook fs-4"></i>
+            <i class="bi bi-instagram fs-4"></i>
+            <i class="bi bi-tiktok fs-4"></i>
+            <i class="bi bi-youtube fs-4"></i>
+        </div>
+    </footer>
+
+    <!-- Ficheros JavaScript propio y de librerías -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
+
 </html>

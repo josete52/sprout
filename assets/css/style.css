@@ -1,7 +1,174 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;0,400;1,100..900&family=Paytone+One&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    --bs-gutter-x: 0rem !important;
+}
+
+body{
+    background-color: var(--color4) !important ;
+    overflow-x: hidden;
+}
+
+.vr{
+    color: var(--color4) !important;
+}
+
+.youSpinMeRound {
+    animation: spinning  1.1s  infinite, spinningI 1s  infinite ;
+    animation-direction: alternate;
+  }
+
+  .youSpinMeRound2 {
+    animation: spinningI  1.1s  infinite, spinning 1s  infinite ;
+    animation-direction: alternate;
+  }
+  
+  @keyframes  spinning{
+    100%{
+      transform:rotate(0.11turn);
+    }
+  }
+
+  @keyframes  spinningI{
+    100%{
+      transform:rotate(-0.11turn);
+    }
+  }
+
+
+.navbar{
+    background-color: var(--color1) !important;
+}
+
+.form-control {
+    background-color: white;
+    color: rgb(15, 15, 15);
+}
+
+.form-control::placeholder{
+    color: rgb(39, 37, 37);
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.flickity-button {
+    background: var(--color1) !important;
+    color: #fff !important;
+}
+
+.producto{
+    width: 100%;
+}
+
+.btn{
+    background-color: var(--color1) !important;
+}
+
+#botonAsc{
+    height: 5vh;
+    position: fixed !important;
+    bottom: 7em;
+    right: 5em;
+    z-index: 999;
+}
+
+:root {
+    --color1: rgb(44, 79, 57);
+    --color3: rgb(28, 28, 28);
+    --color4: rgb(255, 246, 229);
+    --textTitol: "Archivo", sans-serif;
+    --textBody: "Archivo", sans-serif;
+} 
+
+#inicio {
+    width: 100%;
+    height: 100vh !important;
+    background-color: var(--color4) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem !important;
+}
+
+.tittle{
+    width: 85%;
+}
+
+section{
+    background-color: var(--color4);
+}
+
+#inicio h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--color3);
+    font-weight: 500;
+    font-size: 10em !important;
+}
+
+#cherry {
+    left: 2em !important ;
+    height: 50vh !important ;
+    bottom: 0;
+}
+
+#tomato{
+    right: 2em !important;
+    top: 10em !important;
+}
+
+#lettuce{
+    top: -20% !important;
+    left: -10% !important;;
+    transform: rotate(45deg) !important;
+    
+}
+
+#inicio img {
+    height: 40vh;
+}
+
+#inicio {
+    width: 100%;
+    height: 95vh !important;
+}
+
+#logoMain{
+    margin-top: -1rem !important;
+    top: 0 !important;
+    height: 15vh !important;
+}
+
+#product h1 {
+    font-size: 6rem !important;
+    text-wrap: nowrap;
+    line-height: 1 !important;
+    font-weight: bolder;
+}
+
+#product h2 {
+    font-size: 2rem !important;
+}
+
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6rem !important;
+    color: var(--color1) !important; 
+}
+
 .carousel {
     background: unset;
     width: auto;
 }
+  
 .carousel-cell {
     width: 25%;
     height: auto;
@@ -9,4 +176,194 @@
     border-radius: 20px !important;
     counter-increment: carousel-cell;
     margin-right: 2em !important;
+}
+
+#carousel-2 {
+    padding: 0 10em;
+    height: 100%;
+}
+
+
+#carousel-2 .carousel-cell {
+    overflow: hidden;
+}
+
+
+#carousel-2 .carousel-cell > img {
+    object-fit: cover;
+}
+
+#carousel-3{
+    height: 100%;
+}
+
+#carousel-3 .carousel-cell {
+    width: 90%;
+    
+}
+
+#brands img {
+    width: 12em;
+}
+
+.hoverimg {
+    transform: scale(1.5);
+}
+
+  /* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    /* content: counter(carousel-cell); */
+    line-height: unset;
+    font-size: unset;
+    color: white;
+}
+
+.flickity-page-dots{
+    display: none;
+}
+
+#where h4 {
+    font-size: 1em;
+}
+
+footer{
+    bottom: 0;
+}
+
+
+
+
+/* ADAPTACIONES RESPONSIVE */
+@media screen and (max-width: 1200px) {
+
+    #cherry {
+        height: 40vh !important ; 
+        left: 20% !important;
+    }
+    
+    #tomato{
+        top: 6em !important;
+    }
+
+    .texto {
+        margin-bottom: 8rem !important;
+    }
+
+    #inicio h1 {
+        font-size: 6em !important;
+        justify-content: center !important;
+    }
+
+    #product h1 {
+        font-size: 4rem !important;
+    }
+
+    .carousel-cell {
+        width: 50%;
+    }
+
+    #buyButton{
+        flex-direction: row !important;
+    }
+
+    #buyButton button{
+        margin: 0 !important;
+    }
+    
+    #tomato{
+        display: none;
+    }
+    
+    #lettuce{
+        display: none;
+    }
+
+
+}   
+
+@media screen and (max-width: 470px) {
+
+    .tittle {
+        font-size: 3em !important;
+    }
+
+    #carousel-2 {
+        padding: 0;
+        height: 100%;
+    }
+
+    #cherry{
+        left: 10% !important;
+        bottom: 2rem;
+    }
+    
+    #carousel-2 .carousel-cell {
+        overflow: hidden;
+    }
+
+
+    #carousel-2 .carousel-cell > img {
+        object-fit: cover;
+    }
+    
+    #botonAsc{
+       display: none;
+    }
+
+    #product h1 {
+        font-size: 2rem !important;
+    }
+
+    #inicio h1 {
+        font-size: 3em !important;
+        justify-content: center !important;
+    }
+    
+    h2 {
+        text-align: center !important;
+        margin-bottom: 3rem !important;
+        font-size: 2rem !important;
+    }
+
+    .row h2 {
+        margin-bottom: 0rem !important;
+    }
+
+    .row {
+        align-items: start !important;
+    }
+
+    .carousel-cell {
+        width: 80%;
+    }
+
+    #buyButton button{
+        margin: 0 !important;
+        font-size: unset !important;
+    }
+    
+    .row{
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .col-4 {
+        width: 100% !important;
+    }
+
+    #where {
+        padding-top: 0 !important;
+        align-items: start;
+    }
+
+    footer .gap-4{
+        gap: 0.75em !important;
+    }
+
+    .vr{
+        display: none !important;
+    }
+
 }
