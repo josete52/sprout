@@ -99,8 +99,14 @@ body{
     margin-top: 3rem !important;
 }
 
-.tittle{
+.title {
     width: 85%;
+    background: linear-gradient(90deg, #388e3c, #43a047 30%, #8bc34a 70%, #cddc39);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-fill-color: transparent;
 }
 
 section{
@@ -317,8 +323,14 @@ footer{
 
 @media screen and (max-width: 470px) {
 
-    .tittle {
+    .title {
         font-size: 3em !important;
+        background: linear-gradient(90deg, #388e3c, #43a047 30%, #8bc34a 70%, #cddc39);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        text-fill-color: transparent;
     }
 
     #carousel-2 {
