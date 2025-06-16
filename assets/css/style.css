@@ -178,21 +178,6 @@ h2{
     overflow: hidden;
 }
 
-#carousel-2 {
-    padding: 0 10em;
-    height: 100%;
-}
-
-
-#carousel-2 .carousel-cell {
-    overflow: hidden;
-}
-
-
-#carousel-2 .carousel-cell > img {
-    object-fit: cover;
-}
-
 #carousel-3{
     height: 100%;
 }
@@ -326,24 +311,11 @@ footer{
         text-fill-color: transparent;
     }
 
-    #carousel-2 {
-        padding: 0;
-        height: 100%;
-    }
-
     #cherry{
         left: 10% !important;
         bottom: 2rem;
     }
-    
-    #carousel-2 .carousel-cell {
-        overflow: hidden;
-    }
 
-
-    #carousel-2 .carousel-cell > img {
-        object-fit: cover;
-    }
     
     #botonAsc{
        display: none;
@@ -428,3 +400,25 @@ a.card {
 .badge-low-stock { background: #e53935; }
 .badge-best-value { background: #1976d2; }
 .carousel-cell.position-relative { position: relative; }
+
+/* Highlight Section Styles */
+.highlight-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px 0 rgba(60,60,60,0.09);
+    padding: 2rem 1rem;
+    margin: 0 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 250px;
+}
+
+.highlight-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px 0 rgba(60,60,60,0.15);
+    background: #f9fbe7;
+}
+
+.highlight-icon {
+    font-size: 2.5rem;
+    color: #81c784;
+}

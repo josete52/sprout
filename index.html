@@ -34,11 +34,11 @@
             <div class="container-fluid ">
                 <a class="navbar-brand" href="#">Sprout</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="collapse navbar-collapse" id="navbarToggle">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/">Inicio</a>
@@ -201,7 +201,7 @@
     <!-- carousel guias de cuidados -->
     <section id="guia" class="container-fluid d-flex flex-column justify-content-center align-items-center w-100 p-5">
         <h2 data-aos="zoom-in-up" class="pb-5">Guias</h2>
-        <div id="carousel-2" class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
+        <div id="carousel-cuidados" class="carousel w-100 rounded-4 overflow-hidden" data-flickity='{ "wrapAround": true }'>
             <div class="card carousel-cell">
                 <a href="articulo.html"><img src="./assets/images/planta 1.jpg" class="card-img-top z-2" alt=""></a>
                 <div class="carousel-desc">Cómo cuidar una planta de interior</div>
@@ -295,34 +295,36 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="row d-flex justify-content-center align-items-center w-100 px-5 mt-5">
-            <div class="col w-100 d-flex flex-column justify-content-center align-items-center">
-                <div>
-                    <h4 data-aos="fade-up" data-aos-duration="3000">Pide hoy, recibe hoy</h4>
-                    <p data-aos="fade-up" data-aos-duration="3000">Entrega rápida en la franja horaria que mejor te
-                        venga</p>
+        <div class="row d-flex gap-3 justify-content-center align-items-center w-100 px-5 mt-5 highlight-section">
+            <div class="col w-100 d-flex flex-column justify-content-center align-items-center highlight-card">
+                <div class="highlight-icon mb-2" data-aos="zoom-in" data-aos-once="true">
+                    <i class="bi bi-lightning-charge-fill"></i>
                 </div>
+                <h4 data-aos-duration="3000">Pide hoy, recibe hoy</h4>
+                <p data-aos-duration="3000">Entrega rápida en cualquier franja horaria</p>
             </div>
-            <div class="col w-100 d-flex flex-column justify-content-center align-items-center">
-                <div>
-                    <h4 data-aos="fade-up" data-aos-duration="3000">Envío gratis</h4>
-                    <p data-aos="fade-up" data-aos-duration="3000">En compras superiores a 30€</p>
+            <div class="col w-100 d-flex flex-column justify-content-center align-items-center highlight-card">
+                <div class="highlight-icon mb-2" data-aos="zoom-in" data-aos-once="true">
+                    <i class="bi bi-truck"></i>
                 </div>
+                <h4 data-aos-duration="3000">Envío gratis</h4>
+                <p data-aos-duration="3000">En compras superiores a 30€</p>
             </div>
-            <div class="col w-100 d-flex flex-column justify-content-center align-items-center">
-                <div>
-                    <h4 data-aos="fade-up" data-aos-duration="3000">Folletos</h4>
-                    <p data-aos="fade-up" data-aos-duration="3000">Descubre las mejores ofertas</p>
+            <div class="col w-100 d-flex flex-column justify-content-center align-items-center highlight-card">
+                <div class="highlight-icon mb-2" data-aos="zoom-in" data-aos-once="true">
+                    <i class="bi bi-megaphone-fill"></i>
                 </div>
+                <h4 data-aos-duration="3000">Folletos</h4>
+                <p data-aos-duration="3000">Descubre las mejores ofertas</p>
             </div>
         </div>
     </section>
 
     <footer class=" w-100 d-flex p-5 bg-white">
         <div class="w-100 d-flex flex-column gap-3 ">
-            <a href="#">Recetas</a>
-            <a href="#">Empleo</a>
-            <a href="#">Atencion al cliente</a>
+            <a href="#" class="link-underline link-underline-opacity-0 text-dark">Recetas</a>
+            <a href="#" class="link-underline link-underline-opacity-0 text-dark">Empleo</a>
+            <a href="#" class="link-underline link-underline-opacity-0 text-dark">Atencion al cliente</a>
         </div>
         <div class=" w-100 d-flex justify-content-end align-items-center gap-4">
             <i class="bi bi-twitter-x fs-4"></i>
